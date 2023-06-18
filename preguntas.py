@@ -55,11 +55,11 @@ def pregunta_02():
 
     # Imprima la correlación entre las columnas `life` y `fertility` con 4 decimales.
     corr_life_fertility = float(df.corr(numeric_only=True)["life"]["fertility"])
-    print(f"{corr_life_fertility:.4g}")
+    print(f"{corr_life_fertility:.4f}")
 
     # Imprima la media de la columna `life` con 4 decimales.
     life_mean = float(df['life'].mean())
-    print(f"{life_mean:.4g}")
+    print(f"{life_mean:.4f}")
 
     # Imprima el tipo de dato de la columna `fertility`.
     type_fertility = type(df["fertility"])
